@@ -1,0 +1,201 @@
+/* color primary */
+/* color neutral */
+/* Device size */
+/* color hover */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 16px;
+}
+
+body {
+  background-image: url("../images/pattern-background-mobile.svg");
+  background-repeat: no-repeat;
+  background-color: #e0e8ff;
+  background-size: 100%;
+  background-position: top;
+  max-width: 1440px;
+  height: 100vh;
+}
+
+@media (min-width: 375px) {
+  body {
+    background-image: url("../images/pattern-background-desktop.svg");
+  }
+}
+
+body main {
+  height: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body footer {
+  font-size: 0.7rem;
+  text-align: center;
+  color: #1f2f56;
+}
+
+@media (min-width: 375px) {
+  body footer {
+    font-size: 0.9rem;
+  }
+}
+
+body footer a {
+  text-decoration: none;
+  color: #3829e0;
+}
+
+article {
+  width: 320px;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 20px;
+}
+
+@media (min-width: 375px) {
+  article {
+    width: 400px;
+  }
+}
+
+article .headerImage {
+  width: 100%;
+}
+
+article .headerImage img {
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+}
+
+article .content {
+  padding: 25px 25px 10px;
+}
+
+@media (min-width: 375px) {
+  article .content {
+    padding: 40px 40px 10px;
+  }
+}
+
+article .content h2 {
+  margin-bottom: 25px;
+}
+
+article .content .planContentGeneral {
+  margin: 25px 0;
+  width: 100%;
+  background-color: #f5f7ff;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+@media (min-width: 375px) {
+  article .content .planContentGeneral {
+    padding: 20px;
+  }
+}
+
+article .content > a {
+  background-color: #3829e0;
+  color: #fff;
+  font-weight: 700;
+  display: block;
+  margin: 10px 0;
+  text-decoration: none;
+  padding: 15px 0;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 25px 15px 0px #e0e8ff;
+          box-shadow: 0px 25px 15px 0px #e0e8ff;
+}
+
+article .content .payment:hover {
+  background-color: #756cf1;
+}
+
+article .content .cancel {
+  background-color: rgba(255, 255, 255, 0);
+  color: #7280a7;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+article .content .cancel:hover {
+  color: #1f2f56;
+}
+
+.planContentGeneral,
+.planContentOne,
+.planContentTwo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.planContentOne {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 65%;
+}
+
+@media (min-width: 375px) {
+  .planContentOne {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    gap: 15px;
+  }
+}
+
+.planContentTwo {
+  width: 35%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.planContentTwo a {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #3829e0;
+}
+
+.planContentTwo a:hover {
+  text-decoration: none;
+  color: #756cf1;
+}
+
+p {
+  color: #7280a7;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.6rem;
+}
+
+h2, h4 {
+  color: #1f2f56;
+  font-weight: 900;
+}
+/*# sourceMappingURL=main.css.map */
