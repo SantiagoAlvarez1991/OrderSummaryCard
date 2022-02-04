@@ -1,0 +1,82 @@
+article
+    width: 320px
+    background-color: #fff
+    text-align: center
+    border-radius: 20px
+    @media (min-width: $breakpoint-mobile)
+        width: 400px       
+    .headerImage        
+        width: 100%
+        img
+            width: 100%              
+            border-radius: 20px 20px 0px 0px
+    .content
+        padding: 25px 25px 10px
+        @media (min-width: $breakpoint-mobile)
+            padding: 40px 40px 10px
+        h2            
+            margin-bottom: 25px
+        p
+            
+        .planContentGeneral
+            margin: 25px 0
+            width: 100%
+            background-color: $color-neutral-one            
+            padding: 15px
+            border-radius: 10px
+            @media (min-width: $breakpoint-mobile)
+                padding: 20px
+                
+        >a 
+            background-color: $color-primary-two
+            color: #fff
+            font-weight: 700
+            display: block             
+            margin: 10px 0
+            text-decoration: none
+            padding: 15px 0
+            border-radius: 10px
+            box-shadow: 0px 25px 15px  0px $color-primary-one
+        .payment
+            &:hover
+                background-color: $color-button-hover
+        .cancel
+            background-color: rgba(255,255 ,255 ,0 )
+            color: $color-neutral-two
+            box-shadow: none
+            &:hover
+                color: $color-neutral-three  
+.planContentGeneral,
+.planContentOne,
+.planContentTwo
+    display: flex
+    align-items: center
+
+.planContentOne
+    justify-content: space-between           
+    width: 65%
+    @media (min-width: $breakpoint-mobile)
+        justify-content: flex-start
+        gap: 15px 
+   
+
+.planContentTwo      
+    width: 35%
+    justify-content: flex-end    
+    a
+        font-weight: 700
+        font-size: 0.9rem        
+        color: $color-primary-two
+        &:hover
+            text-decoration: none
+            color: $color-button-hover 
+
+p
+    color: $color-neutral-two
+    font-weight: 500
+    font-size: 1rem
+    line-height: 1.6rem
+
+h2, h4
+    color: $color-neutral-three
+    font-weight: 900
